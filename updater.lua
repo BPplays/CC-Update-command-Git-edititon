@@ -17,6 +17,7 @@ os.loadAPI("AndysPrograms/api/git/git")
 
 args[6] = shell.dir()
 shell.run("delete", arg[5])
+fs.delete(shell.dir().."/"..arg[5])
 -- shell.run("pastebin"," get ",arg[1], arg[2])
 git.get(args)
 shell.run(arg[5])
